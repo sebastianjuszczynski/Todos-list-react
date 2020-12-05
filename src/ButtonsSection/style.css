@@ -10,6 +10,7 @@
 .buttons__container__header {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 100%;
 }
 
 .buttons__container__h2 {
