@@ -37,9 +37,20 @@ function App() {
     setTasks(tasks => tasks.map(task => ({ ...task, done: true })));
   };
 
+  const addNewTask = (newTaskContent) => {
+    setTasks(tasks => [
+      ...tasks,
+      {
+        content: newTaskContent,
+        done: false,
+        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
+      },
+    ]);
+  };
+
   return (
     <Container>
-      <Section title="Lista zadań" subtitle="Dodaj nowe zadanie" body={<Form />} />
+      <Section title="Lista zadań" subtitle="Dodaj nowe zadanie" body={<Form addNewTask={addNewTask} />} />
       <ButtonsSection title="Lista zadań" body={<Buttons tasks={tasks} hideDone={hideDone} toggleHideDone={toggleHideDone} setAllDone={setAllDone} />} />
       <TasksSection body={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} toggleTaskDone={toggleTaskDone} />} />
     </Container>
