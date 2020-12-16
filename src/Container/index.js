@@ -1,9 +1,9 @@
 import React from "react";
-import "./style.css"
 
-const Container = (props) => (
-    <main className="main__container">
-        {props.children}
+
+const Container = ({ children }) => (
+    <main>
+        {children}
     </main>
 );
 
