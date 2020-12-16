@@ -1,8 +1,9 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
+import { TasksList } from "./styled";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
-    <ul className="container__tasks">
+    <TasksList>
         {tasks.map(task => (
             <li
                 key={task.id}
@@ -14,7 +15,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                 {task.content}
             </li>
         ))}
-    </ul>
+    </TasksList>
 );
 
 export default Tasks;
