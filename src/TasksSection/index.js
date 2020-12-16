@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";
+import { Container } from "./styled";
 
 const TasksSection = ({ body }) => (
-    <section className="container">
+    <Container>
         {body}
-    </section>
+    </Container>
 );
 
 export default TasksSection;
