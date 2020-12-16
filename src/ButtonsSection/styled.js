@@ -1,30 +1,29 @@
-.buttons__container {
+import styled from "styled-components";
+
+export const ButtonsContainer = styled.section`
     display: flex;
-    /* flex-basis: 50%; */
     width: 50%;
     margin: 20px auto 0 auto;
     background-color: #fff;
     box-shadow: 1px 1px 3px 1px #ccc;
-}
 
-.buttons__container__header {
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+`;
+export const ContainerHeader = styled.article`
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
-}
+`;
 
-.buttons__container__h2 {
+export const ContainerH2 = styled.h2`
     background-color: #fff;
     padding: 20px;
     margin-bottom: 1px;
     margin-top: 0;
-}
 
-@media (max-width: 767px) {
-    .buttons__container {
-        width: 100%;
-    }
-    .buttons__container__h2 {
+    @media (max-width: 767px) {
         flex-basis: 100%;
     }
-}
+`
