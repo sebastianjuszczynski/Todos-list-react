@@ -17,16 +17,16 @@ function Tasks() {
   const {
     // tasks,
     removeTask,
-    toggleTaskDone,
+    // toggleTaskDone,
     setAllDone,
     addNewTask,
   } = useTasks();
 
   return (
     <Container>
-      <Section title="Lista zadań" subtitle="Dodaj nowe zadanie" body={<Form addNewTask={addNewTask} />} />
+      <Section title="Lista zadań" subtitle="Dodaj nowe zadanie" body={<Form />} />
       <ButtonsSection title="Lista zadań" body={<Buttons setAllDone={setAllDone} />} />
-      <TasksSection body={<TaskList tasks={tasks} removeTask={removeTask} toggleTaskDone={toggleTaskDone} />} />
+      <TasksSection body={<TaskList tasks={tasks} removeTask={removeTask} />} />
     </Container>
   );
 }
