@@ -6,21 +6,21 @@ import { List, Item, Button } from "./styled";
 const TaskList = () => {
     const {tasks, hideDone} = useSelector(selectTasks);
     const dispatch = useDispatch();
-    
+
     return (
         <List>
-            {tasks.map(task => (
+            {tasks.map(({ id, done, content }) => (
                 <Item
-                    key={task.id}
-                    hidden={task.done && hideDone}
+                    key={id}
+                    hidden={done && hideDone}
                 >
                     <Button
-                        onClick={() => dispatch(toggleTaskDone(task.id))}
+                        onClick={() => dispatch(toggleTaskDone(id))}
                     >
-                        {task.done ? "✔️" : ""}
+                        {done ? "✔️" : ""}
                     </Button>
-                    <Button onClick={() => dispatch(removeTask(task.id))} red>🗑️</Button>
-                    {task.content}
+                    <Button onClick={() => dispatch(removeTask(id))} red>🗑️</Button>
+                    {content}
                 </Item>
             ))}
         </List>

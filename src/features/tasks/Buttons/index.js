@@ -13,7 +13,7 @@ const Buttons = () => {
             <Button onClick={() => dispatch(fetchExampleTasks())}>
                 Pobierz przykładowe zadania
             </Button>
-            {tasks.length !== 0 && (
+            {tasks.length > 0 && (
                 <>
                     <Button onClick={() => dispatch(toggleHideDone())}>
                         {hideDone ? "Pokaż" : "Ukryj"} ukończone
