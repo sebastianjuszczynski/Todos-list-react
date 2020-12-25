@@ -12,8 +12,6 @@ import Container from "../../common/Container";
 
 function Tasks() {
 
-
-
   return (
     <Container>
       <Section title="Lista zadań" subtitle="Dodaj nowe zadanie" body={<Form />} />
