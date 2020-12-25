@@ -14,7 +14,7 @@ function* fetchExampleTasksHandler() {
 }
 
 function* saveTasksInLocalStorageHandler() {
-    const {tasks} = yield select(selectTasks);
+    const { tasks } = yield select(selectTasks);
     yield call(saveTasksInLocalStorage, tasks);
 
 }
@@ -22,4 +22,5 @@ function* saveTasksInLocalStorageHandler() {
 export function* tasksSaga() {
     yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler);
-;}
+    ;
+}
