@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/Todos-list-react/static/js/main.891fe0cc.chunk.js",
-    "main.js.map": "/Todos-list-react/static/js/main.891fe0cc.chunk.js.map",
+    "main.js": "/Todos-list-react/static/js/main.56f62d87.chunk.js",
+    "main.js.map": "/Todos-list-react/static/js/main.56f62d87.chunk.js.map",
     "runtime-main.js": "/Todos-list-react/static/js/runtime-main.4a659bc3.js",
     "runtime-main.js.map": "/Todos-list-react/static/js/runtime-main.4a659bc3.js.map",
-    "static/js/2.e5d64b38.chunk.js": "/Todos-list-react/static/js/2.e5d64b38.chunk.js",
-    "static/js/2.e5d64b38.chunk.js.map": "/Todos-list-react/static/js/2.e5d64b38.chunk.js.map",
+    "static/js/2.5a2dcac5.chunk.js": "/Todos-list-react/static/js/2.5a2dcac5.chunk.js",
+    "static/js/2.5a2dcac5.chunk.js.map": "/Todos-list-react/static/js/2.5a2dcac5.chunk.js.map",
     "static/js/3.15e8dea1.chunk.js": "/Todos-list-react/static/js/3.15e8dea1.chunk.js",
     "static/js/3.15e8dea1.chunk.js.map": "/Todos-list-react/static/js/3.15e8dea1.chunk.js.map",
     "index.html": "/Todos-list-react/index.html",
-    "static/js/2.e5d64b38.chunk.js.LICENSE.txt": "/Todos-list-react/static/js/2.e5d64b38.chunk.js.LICENSE.txt"
+    "static/js/2.5a2dcac5.chunk.js.LICENSE.txt": "/Todos-list-react/static/js/2.5a2dcac5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4a659bc3.js",
-    "static/js/2.e5d64b38.chunk.js",
-    "static/js/main.891fe0cc.chunk.js"
+    "static/js/2.5a2dcac5.chunk.js",
+    "static/js/main.56f62d87.chunk.js"
   ]
 }
