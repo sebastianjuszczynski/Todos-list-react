@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
 import { GlobalStyle } from "./GlobalStyle";
-import App from './features/tasks/Tasks';
+import App from './App';
 import store from "./store";
 import reportWebVitals from './reportWebVitals';
 
