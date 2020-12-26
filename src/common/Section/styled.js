@@ -14,6 +14,7 @@ export const Container = styled.section`
 export const ContainerHeader = styled.h1`
     align-self: flex-start;
     margin-bottom: 0;
+    
 
     @media (max-width: 767px) {
         align-self: center;
@@ -30,4 +31,5 @@ export const ContainerH2 = styled.h2`
     @media (max-width: 767px) {
         text-align: center;
     }
-`
+`;
+

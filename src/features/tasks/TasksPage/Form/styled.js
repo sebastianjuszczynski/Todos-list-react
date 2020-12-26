@@ -14,18 +14,7 @@ export const FormContainer = styled.form`
     }
 `;
 
-export const FormInput = styled.input`
-    flex-basis: 70%;
-    margin-right: 10px;
-    border: 2px solid #eee;
-    padding: 10px;
-    
-    @media (max-width: 767px) {
-        flex-basis: 100%;
-        margin-right: 0;
-        margin-bottom: 5px;
-    }    
-`;
+
 
 export const FormButton = styled.button`
     background-color: teal;

@@ -1,10 +1,15 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, toggleTaskDone, removeTask } from "../tasksSlice";
+import { Link, useLocation } from "react-router-dom";
+import { selectTasksState, toggleTaskDone, removeTask, selectTasksByQuery } from "../../tasksSlice";
 import { List, Item, Button } from "./styled";
 
 const TaskList = () => {
-    const {tasks, hideDone} = useSelector(selectTasks);
+    const location = useLocation();
+    const query = (new URLSearchParams(location.search)).get("szukaj");
+    
+    const { hideDone } = useSelector(selectTasksState);
+    const tasks = useSelector(state => selectTasksByQuery(state, query));
     const dispatch = useDispatch();
 
     return (
@@ -20,7 +25,7 @@ const TaskList = () => {
                         {done ? "✔️" : ""}
                     </Button>
                     <Button onClick={() => dispatch(removeTask(id))} red>🗑️</Button>
-                    {content}
+                    <Link to={`/tasks/${id}`}>{content}</Link>
                 </Item>
             ))}
         </List>
