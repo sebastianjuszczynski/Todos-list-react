@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const List = styled.ul`
     align-self: flex-start;
@@ -44,5 +45,20 @@ export const Button = styled.button`
         background-color: hsl(0, 100%, 50%);
     }
     `}
+`;
+
+
+
+const activeClassName = "active";
+
+export const StyledNavLink = styled(NavLink).attrs(() => ({
+    activeClassName,
+}))`
+    text-decoration: none;
+    color: teal;
+    padding: 10px 10px 3px 10px;
+    &.${activeClassName} {
+        font-weight: bold;
+    }    
 `;
 

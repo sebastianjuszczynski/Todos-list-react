@@ -10,11 +10,11 @@ function TaskPage() {
     const task = useSelector(state => getTaskById(state, id));
     return (
         <Container>
-            <Section title="Szczegóły zadania" subtitle={task ? task.content : "Ups... Nie znaleziono takiego zadania :/"} body={
+            <Section title="Szczegóły zadania" subtitle={task ? task.content : "Oops... Task not found! :("} body={!!task && (
                 <>
                 <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
                 </>
-            } />
+            )} />
         </Container>
     );
 }

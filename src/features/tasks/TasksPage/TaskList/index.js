@@ -1,8 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { selectTasksState, toggleTaskDone, removeTask, selectTasksByQuery } from "../../tasksSlice";
-import { List, Item, Button } from "./styled";
+import { List, Item, Button, StyledNavLink } from "./styled";
+
 
 const TaskList = () => {
     const location = useLocation();
@@ -25,7 +26,7 @@ const TaskList = () => {
                         {done ? "✔️" : ""}
                     </Button>
                     <Button onClick={() => dispatch(removeTask(id))} red>🗑️</Button>
-                    <Link to={`/tasks/${id}`}>{content}</Link>
+                    <StyledNavLink to={`/tasks/${id}`}>{content}</StyledNavLink>
                 </Item>
             ))}
         </List>
