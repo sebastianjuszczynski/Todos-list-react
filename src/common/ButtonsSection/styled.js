@@ -12,14 +12,16 @@ export const ButtonsContainer = styled.section`
     }
 `;
 export const ContainerHeader = styled.article`
-    display: flex;
-    flex-wrap: wrap; 
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
 `;
 export const ContainerH2 = styled.h2`
     background-color: #fff;
     padding: 20px 0 20px 5px;
     margin-bottom: 1px;
-    margin-top: 0;   
+    margin-top: 0;
+    text-align: left; 
     
     @media (max-width: 767px) {
         flex-basis: 100%;

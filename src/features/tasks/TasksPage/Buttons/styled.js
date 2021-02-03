@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const ButtonsBox = styled.div`
-    display: flex;
-    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    justify-content: end;
     margin-bottom: 10px;
 
     @media (max-width: 767px) {
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        justify-items: center;
  }
 
 `;
