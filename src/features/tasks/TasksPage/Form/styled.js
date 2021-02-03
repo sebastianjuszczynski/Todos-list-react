@@ -6,7 +6,7 @@ export const FormContainer = styled.form`
     background-color: #fff;
     box-shadow: 1px 1px 3px 1px #ccc;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 20px 5px;
 
     @media (max-width: 767px) {
         flex-wrap: wrap;

@@ -17,10 +17,6 @@ export const ContainerHeader = styled.h1`
     align-self: flex-start;
     margin-bottom: 0;
     padding-left: 5px;    
-
-    @media (max-width: 767px) {
-        align-self: center;
-    }
 `;
 
 export const ContainerH2 = styled.h2`
@@ -29,18 +25,10 @@ export const ContainerH2 = styled.h2`
     font-weight: normal;
     padding-left: 5px;
     margin-bottom: 1px;
-
-    @media (max-width: 767px) {
-        text-align: center;
-    }
 `;
 export const Paragraph = styled.p`
     background-color: #fff;
     width: 100%;
     padding-left: 5px;
-
-    @media (max-width: 767px) {
-        text-align: center;
-    }
 `;
 
