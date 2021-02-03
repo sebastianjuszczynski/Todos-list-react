@@ -6,6 +6,8 @@ export const Container = styled.section`
     align-items: center;
     width: 50%;
     margin: 0 auto;
+    box-shadow: 1px 1px 3px 1px #ccc;
+    background-color: #fff;
 
     @media (max-width: 767px) {
         width: 100%;
@@ -14,7 +16,7 @@ export const Container = styled.section`
 export const ContainerHeader = styled.h1`
     align-self: flex-start;
     margin-bottom: 0;
-    
+    padding-left: 5px;    
 
     @media (max-width: 767px) {
         align-self: center;
@@ -24,9 +26,18 @@ export const ContainerHeader = styled.h1`
 export const ContainerH2 = styled.h2`
     background-color: #fff;
     width: 100%;
-    box-shadow: 1px 1px 3px 1px #ccc;
-    padding: 20px;
+    font-weight: normal;
+    padding-left: 5px;
     margin-bottom: 1px;
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+`;
+export const Paragraph = styled.p`
+    background-color: #fff;
+    width: 100%;
+    padding-left: 5px;
 
     @media (max-width: 767px) {
         text-align: center;
