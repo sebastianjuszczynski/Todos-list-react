@@ -1,5 +1,7 @@
 # React ToDo List ✅
 
+![Restaurant Website Screenshot](./1.png)
+
 A simple task management application built with **React**.
 
 This project was created to practice the core concepts used in React applications such as component structure, state management, routing, and handling user interactions.
